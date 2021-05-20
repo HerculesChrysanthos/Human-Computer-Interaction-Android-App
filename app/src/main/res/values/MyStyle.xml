@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyStyle" parent="Theme.AppCompat.Light" >
+        <item name="android:textColor">#1c1c1c</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

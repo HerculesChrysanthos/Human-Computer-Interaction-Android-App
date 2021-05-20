@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    tools:context=".ControlRoom">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Επιλογή δωματίου"
+            android:textColor="#0077cc"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginRight="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:drawableTop="@drawable/living_room_icon_24"
+        android:backgroundTint="#0077cc"
+        android:id="@+id/saloni"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:text="σαλονι"
+        app:layout_constraintBottom_toTopOf="@+id/ypnodwmatio"
+        app:layout_constraintEnd_toStartOf="@+id/kouzina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:drawableTop="@drawable/pot_icon_24"
+        android:id="@+id/kouzina"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#0077cc"
+        android:text="κουζινα"
+        app:layout_constraintBottom_toTopOf="@+id/mpanio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:drawableTop="@drawable/bed"
+        android:backgroundTint="#0077cc"
+        android:id="@+id/ypnodwmatio"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="292dp"
+        android:padding="0dp"
+        android:text="υπνοδωματιο"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mpanio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:drawableTop="@drawable/bathroom_icon_24"
+        android:backgroundTint="#0077cc"
+        android:id="@+id/mpanio"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="292dp"
+        android:text="μπανιο"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_states"
+        android:text="\?"
+        app:backgroundTint="@null"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:iconTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

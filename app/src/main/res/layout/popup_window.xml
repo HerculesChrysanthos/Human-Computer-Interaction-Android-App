@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="564dp"
+        android:background="#e1e1e1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Επιλέξτε Hμέρα"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/startTime"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0077cc"
+            android:text="Ώρα Έναρξης"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/endTime"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0077cc"
+            android:text="ώρα ληξης" />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linear"
+    android:gravity="center"
+    android:background="#e1e1e1">
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="105dp"
+        android:padding="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:backgroundTint="#950808"
+        android:text="ΑΚΥΡΩΣΗ"
+        android:layout_below="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="-1dp"
+        android:padding="0dp"
+        android:text="Αποθηκευση"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#089508"
+        android:textSize="13sp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

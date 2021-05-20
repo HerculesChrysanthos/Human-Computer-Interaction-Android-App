@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    tools:context=".Room">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/nameRoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#0077cc"
+            android:layout_marginRight="50dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_states"
+        android:text="\?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:iconTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <Switch
+        android:id="@+id/lights"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="ΦΩΤΑ"
+        android:showText="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="#0077cc"
+        android:switchTextAppearance="@style/MyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/windows"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="ΡΟΛΑ ΠΑΡΑΘΥΡΩΝ"
+        android:showText="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="#0077cc"
+        android:switchTextAppearance="@style/MyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lights"
+        tools:ignore="UseSwitchCompatOrMaterialXml"  />
+
+
+
+    <Switch
+        android:id="@+id/plug1switch"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="38dp"
+        android:text="Πρίζα 1"
+        android:showText="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="#0077cc"
+        android:switchTextAppearance="@style/MyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windows"
+        tools:ignore="UseSwitchCompatOrMaterialXml"  />
+
+    <Switch
+        android:id="@+id/plug2switch"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="26dp"
+        android:text="Πρίζα 2"
+        android:showText="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="#0077cc"
+        android:switchTextAppearance="@style/MyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plug1switch"
+        tools:ignore="UseSwitchCompatOrMaterialXml"  />
+    <Switch
+        android:id="@+id/plug3switch"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="26dp"
+        android:text="Πρίζα 3"
+        android:showText="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="#0077cc"
+        android:switchTextAppearance="@style/MyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plug2switch"
+        tools:ignore="UseSwitchCompatOrMaterialXml"  />
+    <Switch
+        android:id="@+id/plug4switch"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="26dp"
+        android:text="Πρίζα 4"
+        android:showText="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="#0077cc"
+        android:switchTextAppearance="@style/MyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plug3switch"
+        tools:ignore="UseSwitchCompatOrMaterialXml"  />
+    <Switch
+        android:id="@+id/plug5switch"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="26dp"
+        android:text="Πρίζα 5"
+        android:showText="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="#0077cc"
+        android:switchTextAppearance="@style/MyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plug4switch"
+        tools:ignore="UseSwitchCompatOrMaterialXml"  />
+    <Switch
+        android:id="@+id/plug6switch"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="26dp"
+        android:text="Πρίζα 6"
+        android:showText="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="#0077cc"
+        android:switchTextAppearance="@style/MyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plug5switch"
+        tools:ignore="UseSwitchCompatOrMaterialXml"  />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
